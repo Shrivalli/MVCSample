@@ -1,0 +1,15 @@
+﻿@model IEnumerable<MVCSample.Models.Emp>
+    @using MVCSample.Models;
+@{
+    ViewBag.Title = "GetAllEmployees";
+}
+
+<h2>GetAllEmployees</h2>
+<h1> This will print the list of Employees </h1>
+@foreach (var item in Model)
+{
+    <li>@item.Eid</li>
+    <li>@item.Ename</li>
+    <li>@item.Salary</li>
+}
+
